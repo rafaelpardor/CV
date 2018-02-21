@@ -3,172 +3,178 @@ body {
 	margin: 0;
 	background: #005ce6;
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
+  font-weight: 400;
+  
+  overflow-y:hidden;
 }
 
 /* ################# Nav ################# */
-header {
-  background: linear-gradient(#006999, #005ce6);
-}
+  header {
+    background: linear-gradient(#006999, #005ce6);
+  }
 
-.container {
-	width: 80%;
-  margin: 0 auto;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-position-x: 10px;
+  }
 
-}
+  .container h1{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;  
+  }
 
-.container h1{
-  color: white;
-  text-shadow: 2px 2px 4px #000000;  
-}
+  .container h1:hover{
+    text-shadow: 3px 3px 4px #000000;
+  }
 
-.container h1:hover{
-  text-shadow: 3px 3px 4px #000000;
-}
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
+  .logo {
+    float: left;
+    padding: 10px 0;
+  }
 
-.logo {
-  float: left;
-  padding: 10px 0;
-}
+  nav {
+    float: right;
+  }
 
-nav {
-  float: right;
-}
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 40px;
 
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 40px;
+    position: relative;
+  }
 
-  position: relative;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
 
 
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #3385ff;
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #3385ff;
 
-  position: absolute;
-  top: 0;
-  width: 0%;
+    position: absolute;
+    top: 0;
+    width: 0%;
 
-  transition: all ease-in-out 250ms;
-}
+    transition: all ease-in-out 250ms;
+  }
 
-nav a:hover::before {
-  width: 100%;
-}
+  nav a:hover::before {
+    width: 100%;
+  }
 
-/* ################# Body Contact ################# */
-.contact {
-  margin: 3em auto;
-  max-width: 960px;
-}
 
-.contact, .main-intro, footer {
-  padding: 0 1em;
-}
+/* ################# Home ################# */
+  .home {
+    margin: 2.5em auto;
+    max-width: 960px;
+  }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
+  .home, .main-intro, footer {
+    padding: 0 1em;
+  }
 
-.project {
-  height: 160px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1 300px;
-  padding: 2em;
-  margin: 1.2em;
-  border-radius: .5em;
-  transition: transform 0.5s;
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .project {
+    height: 160px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1 300px;
+    padding: 2em;
+    margin: 1.2em;
+    border-radius: .5em;
+    transition: transform 0.5s;
+    
+  }
+  .project:hover{
+    box-shadow: 10px 10px 5px #004cbe;
+
+  }
+
+  .project svg {
+    width: 4em;
+    fill: white;
+    margin-bottom: 2em;
+  }
+
+  .project p {
+    font-size: 1em;
+    font-weight: 500;
+    backface-visibility: hidden;
+  }
+
+  .project a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+
+  .insta {
+    background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
+  }
+
+  .git {
+    background: #181717;
+  }
+
+  .twitter {
+    background: #069af0;
+    
+    /* #4dc3ff */
+  }
+  .twitter img{
+    padding-right: 75px;
+    
+  }
+
+  .linkedin {
+    background: #0077B5;
+  }
+
+
+    
   
-}
-.project:hover{
-  box-shadow: 10px 10px 5px #004cbe;
-
-}
-
-.project svg {
-  width: 4em;
-  fill: white;
-  margin-bottom: 2em;
-}
-
-.project p {
-  font-size: 1em;
-  font-weight: 500;
-  backface-visibility: hidden;
-}
-
-.project a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-
-.insta {
-  background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
-}
-
-.git {
-  background: #181717;
-}
-
-.twitter {
-  background: #1ca4f4;
-  
-  /* #4dc3ff */
-}
-.twitter img{
-  padding-right: 75px;
-  
-}
-
-.linkedin {
-  background: #0077B5;
-}
-
 
 /* ################# Footer ################# */
-footer {
-  margin-top: 2em;
-  color: white;
-  font-size: 20px;
-  padding: 10px 0;
-  text-align: center;
-  text-shadow: 1px 1px 2px #000000;
-}
+  footer {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    margin-bottom: 0px;
+  }
 
-.love {
-  color: red;
-  margin: 0 .25em;
-  text-decoration: none;
-}
+  .love {
+    color: red;
+    margin: 0 .25em;
+    text-decoration: none;
+  }
