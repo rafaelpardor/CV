@@ -3,9 +3,7 @@ body {
 	margin: 0;
 	background: #005ce6;
 	font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  
-  overflow-y:hidden;
+  overflow-y: scroll;
 }
 
 /* ################# Nav ################# */
@@ -21,11 +19,11 @@ body {
 
   .container h1{
     color: white;
-    text-shadow: 2px 2px 4px #000000;  
+    text-shadow: 2px 2px #000000;
   }
 
   .container h1:hover{
-    text-shadow: 3px 3px 4px #000000;
+    text-shadow: 3px 3px 5px #000000;
   }
 
   header::after {
@@ -36,52 +34,8 @@ body {
 
   .logo {
     float: left;
-    padding: 10px 0;
+    padding: 10px;
   }
-
-  nav {
-    float: right;
-  }
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 40px;
-
-    position: relative;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
-
-
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #3385ff;
-
-    position: absolute;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    width: 100%;
-  }
-
 
 /* ################# Home ################# */
   .home {
@@ -100,7 +54,7 @@ body {
   }
 
   .project {
-    height: 160px; 
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,8 +65,8 @@ body {
     margin: 1.2em;
     border-radius: .5em;
     transition: transform 0.5s;
-    
   }
+
   .project:hover{
     box-shadow: 10px 10px 5px #004cbe;
 
@@ -136,32 +90,28 @@ body {
     display: block;
   }
 
-
-  .insta {
-    background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
-  }
-
   .git {
     background: #181717;
   }
 
-  .twitter {
-    background: #069af0;
-    
-    /* #4dc3ff */
-  }
-  .twitter img{
-    padding-right: 75px;
-    
+  .codepen{
+    background: #000000;
   }
 
   .linkedin {
     background: #0077B5;
   }
-
-
-    
+  .twitter {
+    background: #4dc3ff;
+  }
+  .insta {
+    background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
+  }
   
+
+  .blog{
+    background: #ff9900;
+  }
 
 /* ################# Footer ################# */
   footer {
@@ -178,3 +128,33 @@ body {
     margin: 0 .25em;
     text-decoration: none;
   }
+
+  .flag {
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+  }
+
+  .colombia {
+    background: linear-gradient(to bottom, #FCD116 0%, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%, #CE1126 100%);
+  }
+
+
+/* ################# Responsive ################# */
+@media screen and (max-width: 900px){
+
+  body{
+    
+    overflow-y: auto;
+  }
+  .container h1{
+    text-align: center;
+  }
+
+  .project{
+    flex: 200px;
+  }
+  
+}
