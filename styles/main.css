@@ -1,16 +1,12 @@
 
 body {
 	margin: 0;
-	background: #005ce6;
+	background: #0F4799;
 	font-family: 'Work Sans', sans-serif;
   overflow-y: scroll;
 }
 
 /* ################# Nav ################# */
-  header {
-    background: linear-gradient(#006999, #005ce6);
-  }
-
   .container {
     width: 80%;
     margin: 0 auto;
@@ -68,8 +64,7 @@ body {
   }
 
   .project:hover{
-    box-shadow: 10px 10px 5px #004cbe;
-
+    box-shadow: 10px 10px 5px #0A2F66;
   }
 
   .project svg {
@@ -104,14 +99,6 @@ body {
   .twitter {
     background: #4dc3ff;
   }
-  .insta {
-    background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
-  }
-  
-
-  .blog{
-    background: #ff9900;
-  }
 
 /* ################# Footer ################# */
   footer {
@@ -145,8 +132,7 @@ body {
 /* ################# Responsive ################# */
 @media screen and (max-width: 900px){
 
-  body{
-    
+  body{    
     overflow-y: auto;
   }
   .container h1{
