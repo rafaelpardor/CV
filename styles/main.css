@@ -1,14 +1,14 @@
 
 body {
 	margin: 0;
-	background: #0F4799;
-	font-family: 'Lato', sans-serif;
+	background: #005ce6;
+	font-family: 'Work Sans', sans-serif;
   overflow-y: scroll;
 }
 
 /* ################# Nav ################# */
   header {
-    /* background: linear-gradient(#006999, #005ce6); */
+    background: linear-gradient(#006999, #005ce6);
   }
 
   .container {
@@ -26,7 +26,14 @@ body {
     text-shadow: 3px 3px 5px #000000;
   }
 
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
   .logo {
+    float: left;
     padding: 10px;
   }
 
@@ -61,7 +68,7 @@ body {
   }
 
   .project:hover{
-    box-shadow: 10px 10px 5px #0A2F66;
+    box-shadow: 10px 10px 5px #004cbe;
 
   }
 
@@ -81,7 +88,6 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    font-family: 'Cantarell';
   }
 
   .git {
@@ -97,6 +103,14 @@ body {
   }
   .twitter {
     background: #4dc3ff;
+  }
+  .insta {
+    background: linear-gradient(to top right, #fccc63, #fccc63, #cd486b, #8a3ab9,#4c68d7);
+  }
+  
+
+  .blog{
+    background: #ff9900;
   }
 
 /* ################# Footer ################# */
@@ -121,7 +135,6 @@ body {
     overflow: hidden;
     display: block;
     margin: auto;
-
   }
 
   .colombia {
