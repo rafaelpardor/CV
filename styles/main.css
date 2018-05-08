@@ -1,46 +1,87 @@
+:root{
+  --background-color: #0F4799;
+  --git-color: #181717;
+  --codepen-color: #000000;
+  --linkedin-color: #0077B5;
+  --twitter-color: #4dc3ff;
+}
 
 body {
-	margin: 0;
-	background: #0F4799;
-	font-family: 'Work Sans', sans-serif;
-  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+	background: var(--background-color);
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Lato', sans-serif;
 }
 
 /* ################# Nav ################# */
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    background-position-x: 10px;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-position-x: 10px;
+  margin:auto;
+  text-align:center;
+}
+.container h1:hover{
+  text-shadow: 3px 3px 5px #000000;
+}
+
+.logo {
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  letter-spacing: 4px;
+}
+
+.myWord{
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+  text-align: center;
+    
   }
 
-  .container h1{
-    color: white;
-    text-shadow: 2px 2px #000000;
+  .word{
+    top: 0px;
+    left: 1px;
+    min-height: 1em;
+    margin: 0px
   }
-
-  .container h1:hover{
-    text-shadow: 3px 3px 5px #000000;
+   
+  .word .cursor{
+    display: inline-block;
+    min-width: 1px;
+    background:#fff;
+    margin-left:-0.5em;
+    margin-top:-0.1em;
+    height:1.3em;
+    vertical-align: middle;
+    animation: blinkCursor 1s infinite;
   }
-
-  header::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-
-  .logo {
-    float: left;
-    padding: 10px;
+   
+  @keyframes blinkCursor{
+    0% { opacity:1; }
+    80%{ opacity:1; }
+    80.1%{ opacity:0; }
+    100%{ opacity:0; }
   }
 
 /* ################# Home ################# */
+
   .home {
     margin: 2.5em auto;
     max-width: 960px;
   }
 
   .home, .main-intro, footer {
-    padding: 0 1em;
+    padding: 2.2em;
   }
 
   .projects {
@@ -50,22 +91,26 @@ body {
   }
 
   .project {
-    height: 160px;
+    height: 140px;
+    flex: 1 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex: 1 300px;
     padding: 2em;
     margin: 1.2em;
     border-radius: .5em;
     transition: transform 0.5s;
   }
 
+
   .project:hover{
-    box-shadow: 10px 10px 5px #0A2F66;
-  }
+    box-shadow: 5px 5px 5px #0A2F66, 
+                -5px -5px 5px #0A2F66,
+                -5px 5px 5px #0A2F66,
+                5px -5px 5px #0A2F66;
+              }
 
   .project svg {
     width: 4em;
@@ -74,9 +119,9 @@ body {
   }
 
   .project p {
-    font-size: 1em;
     font-weight: 500;
     backface-visibility: hidden;
+    font-family: 'Lato';
   }
 
   .project a {
@@ -86,25 +131,26 @@ body {
   }
 
   .git {
-    background: #181717;
+    background: var(--git-color);
   }
 
   .codepen{
-    background: #000000;
+    background: var(--codepen-color);
   }
 
   .linkedin {
-    background: #0077B5;
+    background: var(--linkedin-color);
   }
   .twitter {
-    background: #4dc3ff;
+    background: var(--twitter-color);
   }
 
 /* ################# Footer ################# */
+
   footer {
     color: white;
     font-size: 20px;
-    padding: 10px 0;
+    padding-top: 10px;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
     margin-bottom: 0px;
@@ -128,7 +174,6 @@ body {
     background: linear-gradient(to bottom, #FCD116 0%, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%, #CE1126 100%);
   }
 
-
 /* ################# Responsive ################# */
 @media screen and (max-width: 900px){
 
@@ -141,6 +186,8 @@ body {
 
   .project{
     flex: 200px;
+    height: 200px;
+    width: 100px;
   }
   
 }
