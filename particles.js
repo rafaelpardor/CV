@@ -1,6 +1,6 @@
 
 var pJS = function (tag_id, params) {
-  var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el')
+ var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el')
 
   /* particles.js variables with default values */
   this.pJS = {
@@ -27,7 +27,7 @@ var pJS = function (tag_id, params) {
           color: '#ff0000'
         },
         polygon: {
-          nb_sides: 5
+          nb_sides: 100
         },
         image: {
           src: '',

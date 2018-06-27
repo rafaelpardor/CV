@@ -39,25 +39,25 @@ particlesJS('particles-js',
         }
       },
       'size': {
-        'value': 3.5,
+        'value': 4.5,
         'random': true,
         'anim': {
           'enable': false,
           'speed': 40,
-          'size_min': 0.1,
+          'size_min': 2.0,
           'sync': false
         }
       },
       'line_linked': {
         'enable': true,
-        'distance': 120,
-        'color': '#ffffff',
-        'opacity': 0.8,
-        'width': 0.5
+        'distance': 170,
+        'color': '#fff',
+        'opacity': 0.5,
+        'width': 0.6
       },
       'move': {
         'enable': true,
-        'speed': 3,
+        'speed': 2,
         'direction': 'none',
         'random': false,
         'straight': false,

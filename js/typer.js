@@ -2,12 +2,10 @@ var typer = {
   words: [
     '',
     'Loading    .       .       .   ',
+    'Hi      :]      and    Welcome',
     '19 years old',
     'Programming lover',
-    'Web-developer',
-    'Learning',
-    'Hustling',
-    'Quiet and listening'
+    'From Colombia',
   ],
   wordIndex: 0,
   speed: 100,
