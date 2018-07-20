@@ -2,10 +2,10 @@ var typer = {
   words: [
     '',
     'Loading    .       .       .   ',
-    'Hi      :]      and    Welcome',
-    '19 years old',
-    'Programming lover',
-    'From Colombia',
+    'Programming-lover',
+    'Python developer',
+    'Back-end',
+    ''
   ],
   wordIndex: 0,
   speed: 100,
@@ -18,15 +18,15 @@ var typer = {
   },
   typeLetter: function typeLetter () {
     var _this = this
-
+    
     var timer = arguments.length <= 0 || arguments[0] === undefined ? this.speed : arguments[0]
-
+    
     setTimeout(function () {
       var word = {
         finished: _this.words[_this.wordIndex],
         current: _this.readWord()
       }
-
+      
       var nextLetterIndex = word.finished.length - word.current.length
       if (nextLetterIndex > 0) {
         nextLetterIndex = word.finished.length - nextLetterIndex
@@ -46,7 +46,7 @@ var typer = {
   },
   nextWord: function nextWord () {
     var _this2 = this
-
+    
     this.wordIndex++
     if (this.wordIndex == this.words.length) {
       this.wordIndex = 0
