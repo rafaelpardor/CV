@@ -1,4 +1,3 @@
-
 particlesJS('particles-js',
 
   {

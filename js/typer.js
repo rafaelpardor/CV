@@ -2,31 +2,31 @@ var typer = {
   words: [
     '',
     'Loading    .       .       .   ',
-    'Programming-lover',
-    'Python developer',
-    'Back-end',
-    ''
+    'software developer',
+    'Programming lover',
+    'Always learning',
+    'Go - Python - JS'
   ],
   wordIndex: 0,
-  speed: 100,
+  speed: 80,
   nextWordWait: 1000,
   html: {
     word: document.querySelector('.myWord')
   },
-  init: function init () {
+  init: function init() {
     this.typeLetter()
   },
-  typeLetter: function typeLetter () {
+  typeLetter: function typeLetter() {
     var _this = this
-    
+
     var timer = arguments.length <= 0 || arguments[0] === undefined ? this.speed : arguments[0]
-    
+
     setTimeout(function () {
       var word = {
         finished: _this.words[_this.wordIndex],
         current: _this.readWord()
       }
-      
+
       var nextLetterIndex = word.finished.length - word.current.length
       if (nextLetterIndex > 0) {
         nextLetterIndex = word.finished.length - nextLetterIndex
@@ -38,15 +38,15 @@ var typer = {
       _this.nextWord()
     }, timer)
   },
-  readWord: function readWord () {
+  readWord: function readWord() {
     return this.html.word.innerHTML
   },
-  clearWord: function clearWord () {
+  clearWord: function clearWord() {
     this.html.word.innerHTML = ''
   },
-  nextWord: function nextWord () {
+  nextWord: function nextWord() {
     var _this2 = this
-    
+
     this.wordIndex++
     if (this.wordIndex == this.words.length) {
       this.wordIndex = 0
