@@ -1,13 +1,3 @@
-/* font-family:
-  'Roboto Mono',
-  'Titillium Web',
-  'Share Tech',
-  'Lato',
-  'Ubuntu',
-  'Tajawal'; 
-  'Cantarell',
-*/
-
 * {
   margin: auto;
   padding: 0;
@@ -15,8 +5,8 @@
 }
 
 :root {
-  /* 564555 */
-  --color-green: #48da9b;
+  --color-green: #6FE7B4;
+  --color-purple: #F7779E;
   --git-color: #181717;
   --codepen-color: #000000;
   --linkedin-color: #0077B5;
@@ -31,6 +21,7 @@
   background-size: cover;
   height: 100vh;
   overflow-y: hidden;
+  z-index: 0;
 }
 
 .welcomer {
@@ -43,6 +34,7 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .title {
@@ -57,7 +49,7 @@
   letter-spacing: 10px;
   font-family: 'Roboto Mono', sans-serif;
   text-transform: uppercase;
-  color: #CC2F7D;
+  color: var(--color-purple);
 }
 
 .title h3 {
@@ -148,7 +140,7 @@
 
 .footer i {
   overflow-y: hidden;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 i {
@@ -168,4 +160,3 @@ i:hover {
   text-decoration: none;
   color: #fff;
 }
-        

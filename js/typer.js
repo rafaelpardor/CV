@@ -2,10 +2,13 @@ var typer = {
   words: [
     '',
     'Loading    .       .       .   ',
-    'software developer',
-    'Programming lover',
-    'Always learning',
-    'Go - Python - JS'
+    'software developer     ',
+    'Programming lover      ',
+    'Longlife learning      ',
+    'voluntary, and self-motivated      ',
+    'Golang   ',
+    'Python   ',
+    'Java-script    ',
   ],
   wordIndex: 0,
   speed: 80,
